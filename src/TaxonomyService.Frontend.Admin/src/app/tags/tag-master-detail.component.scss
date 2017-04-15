@@ -1,0 +1,20 @@
+@import "../../styles/base/_all";
+
+ce-tag-master-detail {
+    display:block;
+	@extend .view-card;
+
+    ce-tag-edit-embed,
+    ce-tag-list-embed {
+        float:left;
+        display:inline-block;
+        position:relative;
+        width:50%;
+    }
+}
+
+ce-tag-master-detail::after {
+    clear:both;
+    display:block;
+    content:" ";
+}
